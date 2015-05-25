@@ -298,7 +298,7 @@ int initRecorder(const char *path) {
     }
 
     inopt.rate = rate;
-    inopt.gain = 0;
+    inopt.gain = 2048;
     inopt.endianness = 0;
     inopt.copy_comments = 0;
     inopt.rawmode = 1;
