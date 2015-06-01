@@ -38,6 +38,7 @@ android {
                     "-DAVOID_TABLES "
             ldLibs "log", "m"
             stl "stlport_static"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
         }
     }
     buildTypes {
