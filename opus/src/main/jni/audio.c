@@ -713,3 +713,13 @@ JNIEXPORT int Java_com_droidkit_opus_OpusLib_isOpusFile(JNIEnv *env, jclass clas
 
     return result;
 }
+
+jint JNI_OnLoad(JavaVM *vm, void *reserved)
+{
+    // Get JNI Env for all function calls
+    JNIEnv* env;
+    if ((*vm)->GetEnv(vm, (void **) &env, JNI_VERSION_1_6) != JNI_OK) {
+        return -1;
+    }
+    return JNI_VERSION_1_6;
+}

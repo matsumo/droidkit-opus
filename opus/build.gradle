@@ -28,7 +28,7 @@ android {
         versionName "1.1.1"
 
         ndk {
-            moduleName "opus"
+            moduleName "droidkit"
 
             cFlags "-DANDROID_NDK " +
                     "-DDISABLE_IMPORTGL " +

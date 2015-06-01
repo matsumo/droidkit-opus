@@ -8,7 +8,7 @@ import java.nio.ByteBuffer;
 public class OpusLib {
 
     static {
-        System.loadLibrary("opus");
+        System.loadLibrary("droidkit");
     }
 
     /**
